@@ -1,0 +1,70 @@
+/**
+  |============================
+  | Custom styles
+  |============================
+*/
+body {
+    font-family: Roboto, sans-serif;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 2%;
+}
+/* reset */
+
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+
+.header {
+    background-color: #E7E9FC;
+}
+
+.header-nav {
+    
+}
+
+.logo {
+    font-family: Raleway, sans-serif; 
+    font-weight: 800; 
+    font-size: 18px; 
+    line-height: 1.16; 
+    text-transform: uppercase;
+    letter-spacing: 3%; 
+    color: #4D5AE5;
+}
+
+.studio-dark {
+    color: #2E2F42;
+}
+
+
+.header-nav-link {
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+.header-link {}
+
+
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.studio-light {
+    color: #F4F4FD;
+}
