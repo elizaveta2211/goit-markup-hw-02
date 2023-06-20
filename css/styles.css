@@ -1,13 +1,28 @@
+/* Common styles */
+:root {
+    --iris-cl: #4D5AE5;
+    --ocean-cl: #404BBF;
+    --navyblue-cl: #2E2F42;
+    --green-cl: #31D0AA;
+    --slate-cl: #434455;
+    --lightslate-cl: #8E8F99;
+    --cornflower-cl: #E7E9FC;
+    --cloud-cl: #F4F4FD;
+    --white-cl: #FFFFFF;
+}
+
+
 /**
   |============================
-  | Custom styles
+  | Common styles
   |============================
 */
 body {
     font-family: Roboto, sans-serif;
-    color: #434455;
+    background-color: var(--white-cl);
+    color: var(--slate-cl);
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 /* reset */
 
@@ -30,10 +45,6 @@ button {
 */
 
 .header {
-    background-color: #E7E9FC;
-}
-
-.header-nav {
     
 }
 
@@ -43,28 +54,156 @@ button {
     font-size: 18px; 
     line-height: 1.16; 
     text-transform: uppercase;
-    letter-spacing: 3%; 
-    color: #4D5AE5;
+    letter-spacing: 0.03em; 
+    color: var(--iris-cl);
 }
 
 .studio-dark {
-    color: #2E2F42;
+    color: var(--navyblue-cl);
 }
 
 
-.header-nav-link {
+.header-nav {
     font-weight: 500;
-    color: #2E2F42;
+    color: var(--navyblue-cl);
 }
 
-.header-link {}
+.header-address {
+    font-style: normal;
+}
+ 
+.header .link:hover,
+.header .link:focus {
+    color: var(--ocean-cl);
+}
+/**
+  |============================
+  | Hero section styles
+  |============================
+*/
 
+.hero {
+    background-color: var(--navyblue-cl);
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--white-cl);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    
+}
+
+.hero-button {
+    background-color: var(--iris-cl);
+    color: var(--white-cl);
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--ocean-cl);
+}
+
+/**
+  |============================
+  | Benefits section styles
+  |============================
+*/
+.benefits .title {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+/**
+  |============================
+  | Product section styles
+  |============================
+*/
+.product .title {
+    color: var(--navyblue-cl);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+
+}
+/**
+  |============================
+  | Our team section styles
+  |============================
+*/
+.team-section {
+    background-color: var(--cloud-cl);
+
+}
+
+.team-section .item {
+    background-color: var(--white-cl);
+}
+.team-section .title {
+    color: var(--navyblue-cl);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.team-section .name {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+.team-section .text {
+    text-align: center;
+}
+/**
+  |============================
+  | Portfolio Section styles
+  |============================
+*/
+
+.button-list {
+    text-align: center;
+}
+
+.button {
+    background-color: var(--cloud-cl);
+    color: var(--iris-cl);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.button.all {
+    background-color: var(--ocean-cl);
+    color: var(--white-cl);
+}
+
+.desc {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
 
 /**
   |============================
   | Footer styles
   |============================
 */
+.footer {
+    background-color: var(--navyblue-cl);
+}
 .studio-light {
-    color: #F4F4FD;
+    color: var(--cloud-cl);
+}
+ 
+.footer .text {
+    color: var(--cloud-cl);
 }
