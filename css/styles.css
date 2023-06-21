@@ -11,7 +11,6 @@
     --white-cl: #FFFFFF;
 }
 
-
 /**
   |============================
   | Common styles
@@ -70,7 +69,6 @@ body {
 .header {
     
 }
-
 .header-nav .link {
     color: var(--navyblue-cl);
     font-weight: 500;
@@ -100,7 +98,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
 }
  
 .header .link:hover,
@@ -113,7 +110,6 @@ body {
   | Hero section styles
   |============================
 */
-
 .hero {
     background-color: var(--navyblue-cl);
     text-align: center;
@@ -125,7 +121,6 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    
 }
 
 .hero .button {
@@ -191,7 +186,7 @@ body {
     text-align: center;
 }
 
-.button {
+.portfolio .button {
     background-color: var(--cloud-cl);
     color: var(--iris-cl);
     font-weight: 500;
@@ -199,7 +194,11 @@ body {
     letter-spacing: 0.04em;
     text-align: center;
 }
-
+.portfolio .button:hover,
+.portfolio .button:focus {
+    color: var(--white-cl);
+    background-color: var(--ocean-cl);
+}
 /**
   |============================
   | Footer styles
