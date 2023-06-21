@@ -71,22 +71,6 @@ body {
     
 }
 
-.logo {
-    font-family: Raleway, sans-serif; 
-    font-weight: 800; 
-    font-size: 18px; 
-    line-height: 1.17; 
-    text-transform: uppercase;
-    letter-spacing: 0.03em; 
-    color: var(--iris-cl);
-    text-decoration: none;
-}
-
-.studio-dark {
-    color: var(--navyblue-cl);
-}
-
-
 .header-nav .link {
     color: var(--navyblue-cl);
     font-weight: 500;
@@ -95,7 +79,20 @@ body {
     letter-spacing: 0.02em;
 
 }
+.logo.link {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--iris-cl);
+    text-decoration: none;
+}
 
+.studio-dark {
+    color: var(--navyblue-cl);
+}
 .header-address {
     font-style: normal;
 }
@@ -203,11 +200,6 @@ body {
     text-align: center;
 }
 
-.button.all {
-    background-color: var(--ocean-cl);
-    color: var(--white-cl);
-}
- 
 /**
   |============================
   | Footer styles
