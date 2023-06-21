@@ -21,22 +21,45 @@ body {
     font-family: Roboto, sans-serif;
     background-color: var(--white-cl);
     color: var(--slate-cl);
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 /* reset */
 
-ul,
-ol {
+.list {
     list-style: none;
 }
-a {
+
+.link {
     text-decoration: none;
     color: currentColor;
 }
-button {
+
+.button {
     font-family: inherit;
     cursor: pointer;
+}
+/* Base styles */
+
+.title {
+    color: var(--navyblue-cl);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+}
+.subtitle {
+    color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 /**
   |============================
@@ -52,10 +75,11 @@ button {
     font-family: Raleway, sans-serif; 
     font-weight: 800; 
     font-size: 18px; 
-    line-height: 1.16; 
+    line-height: 1.17; 
     text-transform: uppercase;
     letter-spacing: 0.03em; 
     color: var(--iris-cl);
+    text-decoration: none;
 }
 
 .studio-dark {
@@ -63,19 +87,30 @@ button {
 }
 
 
-.header-nav {
-    font-weight: 500;
+.header-nav .link {
     color: var(--navyblue-cl);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
 }
 
 .header-address {
     font-style: normal;
+}
+.header-address .link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
 }
  
 .header .link:hover,
 .header .link:focus {
     color: var(--ocean-cl);
 }
+
 /**
   |============================
   | Hero section styles
@@ -92,18 +127,21 @@ button {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     
 }
 
-.hero-button {
+.hero .button {
     background-color: var(--iris-cl);
     color: var(--white-cl);
+    font-weight: 500;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero .button:hover,
+.hero .button:focus {
     background-color: var(--ocean-cl);
 }
 
@@ -112,24 +150,16 @@ button {
   | Benefits section styles
   |============================
 */
-.benefits .title {
-    color: var(--navyblue-cl);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+.benefits {
+    
 }
 /**
   |============================
   | Product section styles
   |============================
 */
-.product .title {
-    color: var(--navyblue-cl);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-
+.product {
+    
 }
 /**
   |============================
@@ -144,19 +174,11 @@ button {
 .team-section .item {
     background-color: var(--white-cl);
 }
-.team-section .title {
-    color: var(--navyblue-cl);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
+.team-section {
+    
 }
 
-.team-section .name {
-    color: var(--navyblue-cl);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+.team-section .subtitle{
     text-align: center;
 }
 .team-section .text {
@@ -168,7 +190,7 @@ button {
   |============================
 */
 
-.button-list {
+.btn.list {
     text-align: center;
 }
 
@@ -176,6 +198,7 @@ button {
     background-color: var(--cloud-cl);
     color: var(--iris-cl);
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
 }
@@ -184,14 +207,7 @@ button {
     background-color: var(--ocean-cl);
     color: var(--white-cl);
 }
-
-.desc {
-    color: var(--navyblue-cl);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
+ 
 /**
   |============================
   | Footer styles
